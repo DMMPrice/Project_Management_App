@@ -1,0 +1,22 @@
+.add-icon-style-box {
+    margin-right: 8rem;
+}
+
+.add-icon-style {
+    color: #fff;
+    font-size: 3rem;
+    padding: 10px;
+    margin: 4rem;
+    background-color: #09b7ff;
+    border-radius: 50%;
+    float: right;
+    box-shadow: 1px 0 4px 1px rgba(19, 139, 190, 0.47);
+}
+
+.add-icon-style:hover {
+    color: #09b7ff;
+    background-color: #ffffff;
+    transition: 0.5s ease-in-out;
+    transform: scale(1.02);
+    box-shadow: 1px 0 4px 1px rgba(255, 255, 255, 0.81);
+}
