@@ -1,0 +1,98 @@
+.Client-Add-window {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.63);
+}
+
+.Client-Add-window-content {
+    width: 50%;
+    height: 60%;
+    border-radius: 80px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    background-color: rgba(18, 24, 46, 0.86);
+}
+
+.close-icon-style {
+    color: #fff;
+    font-size: 2rem;
+    padding: 10px;
+    margin: 2rem;
+    background-color: #09b7ff;
+    border-radius: 50%;
+    float: right;
+    box-shadow: 1px 0 4px 1px rgba(19, 139, 190, 0.47);
+}
+
+.close-icon-style:hover {
+    cursor: pointer;
+    color: #09b7ff;
+    background-color: #ffffff;
+    transition: 0.2s ease-in-out;
+    transform: scale(1.02);
+    box-shadow: 1px 0 4px 1px rgba(255, 255, 255, 0.81);
+}
+
+.ClientDetails-form {
+    margin-top: 4.5rem;
+    margin-left: 5rem;
+}
+
+.second-row, .first-row {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: stretch;
+}
+
+.Client-Add-label {
+    color: #fcfd00;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.Client-Add-input {
+    display: block;
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+
+}
+
+.Client-Add-input:focus {
+    outline: none;
+    color: #ffffff;
+}
+
+.third-row {
+    padding-top: 3rem;
+    padding-right: 2.8rem;
+    float: right;
+}
+
+.save-button, .cancel-button {
+    background-color: rgba(19, 139, 190, 1);
+    border: none;
+    color: #fff;
+    width: 170px;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5rem;
+    margin: 0.5rem 0.5rem;
+    cursor: pointer;
+    border-radius: 32px;
+    box-shadow: 1px 0 4px 1px rgba(19, 139, 190, 0.47);
+}
+
+.save-button:hover, .cancel-button:hover {
+    background-color: rgba(255, 255, 255, 0.81);
+    color: #09b7ff;
+}

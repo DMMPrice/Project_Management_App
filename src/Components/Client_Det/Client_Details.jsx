@@ -2,7 +2,7 @@ import React from 'react';
 import './Client_Details.css';
 import avatar from './Ellipse 1.png';
 
-const ClientDetails = () => {
+const Client_Details = () => {
     return (<div className="client-card-holder">
             <div className="client-card">
                 <img src={avatar} alt={"avatar"}/>
@@ -16,4 +16,4 @@ const ClientDetails = () => {
     )
 };
 
-export default ClientDetails;
+export default Client_Details;
