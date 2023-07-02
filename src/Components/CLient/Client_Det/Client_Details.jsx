@@ -11,6 +11,13 @@ const Client_Details = () => {
                     <li className="client-projects">4 projects</li>
                 </ul>
             </div>
+            <div className="client-card">
+                <img src={avatar} alt={"avatar"}/>
+                <ul className="client-det">
+                    <li className="client-name">PS Srijan</li>
+                    <li className="client-projects">4 projects</li>
+                </ul>
+            </div>
         </div>
 
     )

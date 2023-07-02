@@ -1,4 +1,4 @@
-  import './App.css';
+import './App.css';
 import {
     BrowserRouter as Router,
     Route,
@@ -8,8 +8,10 @@ import {
 import NavBar from "./Components/NavBar/NavBar";
 import React from "react";
 import TestComponent from "./Components/TestComponent";
-import AddProject from "./Components/AddProject/AddProject";
-import ClientDetail from "./Components/Client_Det/Client_Details";
+import AddClientIcon from "./Components/CLient/AddClientIcon/AddClientIcon";
+import ClientDetail from "./Components/CLient/Client_Det/Client_Details";
+import ProjectDet from "./Components/Project/Project_Det/ProjectDet";
+import AddProjectIcon from "./Components/Project/AddProjectIcon/AddProjectIcon";
 
 function App() {
     return (
@@ -21,11 +23,11 @@ function App() {
                 </Route>
                 <Route path="/clientdet" exact>
                     <ClientDetail/>
-                    <AddProject/>
+                    <AddClientIcon/>
                 </Route>
                 <Route path="/projectdet" exact>
-                    <ClientDetail/>
-                    <AddProject/>
+                    <ProjectDet/>
+                    <AddProjectIcon/>
                 </Route>
                 <Redirect to="/"/>
             </Switch>

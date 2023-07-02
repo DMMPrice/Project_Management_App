@@ -1,6 +1,6 @@
 import React from "react";
 import "./ClientAdd.css";
-import "../AddProject/AddProject"
+import "../AddClientIcon/AddClientIcon"
 
 export const ClientAdd = ({showBoxHandler}) => {
     return (

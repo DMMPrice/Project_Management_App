@@ -1,8 +1,8 @@
 import React from 'react';
-import './AddProject.css';
+import './AddClientIcon.css';
 import {ClientAdd} from "../ClientAdd/ClientAdd";
 
-const AddProject = () => {
+const AddClientIcon = () => {
     const [showBox, setShowBox] = React.useState(false);
     const showBoxHandler = () => setShowBox(false);
     return (
@@ -16,4 +16,4 @@ const AddProject = () => {
         </div>)
 }
 
-export default AddProject;
+export default AddClientIcon;
