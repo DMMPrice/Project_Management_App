@@ -1,4 +1,4 @@
-.Client-Add-window {
+.Project-Add-window {
     position: fixed;
     left: 0;
     right: 0;
@@ -7,9 +7,10 @@
     background-color: rgba(0, 0, 0, 0.63);
 }
 
-.Client-Add-window-content {
+.Project-Add-window-content {
     width: 50%;
-    height: 60%;
+    height: auto;
+    padding-bottom: 3rem;
     border-radius: 80px;
     left: 50%;
     top: 50%;
@@ -18,32 +19,12 @@
     background-color: rgba(18, 24, 46, 0.86);
 }
 
-.close-icon-style {
-    color: #fff;
-    font-size: 2rem;
-    padding: 10px;
-    margin: 2rem;
-    background-color: #09b7ff;
-    border-radius: 50%;
-    float: right;
-    box-shadow: 1px 0 4px 1px rgba(19, 139, 190, 0.47);
-}
-
-.close-icon-style:hover {
-    cursor: pointer;
-    color: #09b7ff;
-    background-color: #ffffff;
-    transition: 0.2s ease-in-out;
-    transform: scale(1.02);
-    box-shadow: 1px 0 4px 1px rgba(255, 255, 255, 0.81);
-}
-
-.ClientDetails-form {
+.ProjectDetails-form {
     margin-top: 4.5rem;
     margin-left: 5rem;
 }
 
-.second-row, .first-row {
+.second-row, .first-row, .fourth-row {
     display: flex;
     justify-content: flex-start;
     flex-direction: row;
@@ -51,37 +32,39 @@
     align-content: stretch;
 }
 
-.Client-Add-label {
+.second-row .ProjectDetails-form-subdetails-2 {
+    margin-left: 6.2rem;
+}
+
+.Project-Add-label {
     color: #fcfd00;
     font-size: 2rem;
     margin-bottom: 10px;
 }
 
-.Client-Add-input {
+.Project-Add-input, .Project-Add-input[type="date"] {
     display: block;
     background: transparent;
     border: none;
+    color: rgba(128, 128, 128, 0.89);
     font-size: 2rem;
-
 }
 
-.Client-Add-input:focus {
+.Project-Add-input:focus {
     outline: none;
     color: #ffffff;
 }
 
 .third-row {
     padding-top: 3rem;
-    padding-right: 2.8rem;
-    float: right;
 }
 
-.save-button, .cancel-button {
+.detail-button {
     background-color: rgba(19, 139, 190, 1);
     border: none;
     color: #fff;
     width: 170px;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0.7rem;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -92,7 +75,7 @@
     box-shadow: 1px 0 4px 1px rgba(19, 139, 190, 0.47);
 }
 
-.save-button:hover, .cancel-button:hover {
+.save-button:hover, .cancel-button:hover, .detail-button:hover {
     background-color: rgba(255, 255, 255, 0.81);
     color: #09b7ff;
 }

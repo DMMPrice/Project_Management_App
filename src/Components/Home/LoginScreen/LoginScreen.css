@@ -1,0 +1,78 @@
+
+.loginNav-container-1, .loginNav-container-2 {
+    margin-top: 4rem;
+}
+
+.loginNav-container-3 {
+    margin-top: 1rem;
+    margin-left: 40%;
+    display: flex;
+}
+
+.loginNav-container {
+    position: absolute;
+    margin-left: 30%;
+    width: 472px;
+    height: 370px;
+    flex-shrink: 0;
+    border-radius: 69px;
+    font-size: 1.5rem;
+    background: rgba(19, 139, 190, 0.55);
+}
+
+.loginNav-container label {
+    text-shadow: 2px 2px 9px rgba(0, 0, 0, 0.68);
+    color: #f1dc0d;
+    display: block;
+    margin-left: 10%;
+    font-family: "Lato", sans-serif;
+}
+
+.loginNav-container input {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.68);
+    width: 100%;
+    display: block;
+    color: #FFFFFF;
+    background: transparent;
+    border: none;
+    margin-left: 10%;
+}
+
+.loginNav-container input:focus {
+    outline: none;
+    color: #ffffff;
+}
+
+.sign-up-button, .sign-in-button {
+    background-color: #12182E;
+    font-family: "Arvo", sans-serif;
+    border: none;
+    width: 100px;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    margin: 0.5rem 0.5rem;
+    cursor: pointer;
+    border-radius: 32px;
+    /*box-shadow: 1px 0 2px 1px rgba(18, 24, 46, 0.69);*/
+}
+
+.sign-up-button {
+    color: #fff;
+}
+
+.sign-in-button {
+    color: #f1dc0d;
+}
+
+.sign-up-button:hover {
+    background-color: rgba(255, 255, 255, 0.81);
+    color: rgba(18, 24, 46, 0.69);
+}
+
+.sign-in-button:hover {
+    background-color: rgba(255, 255, 255, 0.81);
+    color: #12182E;
+}
