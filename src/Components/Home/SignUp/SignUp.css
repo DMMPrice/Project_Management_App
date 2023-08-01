@@ -1,0 +1,55 @@
+.SignUp-container{
+    position: absolute;
+    margin-left: 30%;
+    padding: 3rem;
+    width: 40%;
+    height: auto;
+    flex-shrink: 0;
+    border-radius: 69px;
+    font-size: 1.5rem;
+    background: rgba(19, 139, 190, 0.55);
+}
+.SignUp-container-1, .SignUp-container-2, .SignUp-container-3, .SignUp-container-4{
+    margin-top: 1rem;
+}
+.SignUp-container label{
+    text-shadow: 2px 2px 9px rgba(0, 0, 0, 0.68);
+    color: #f1dc0d;
+    display: block;
+    font-family: "Lato", sans-serif;
+}
+.SignUp-container input{
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.68);
+    width: 100%;
+    display: block;
+    color: #FFFFFF;
+    background: transparent;
+    border: none;
+}
+.SignUp-container input:focus{
+    outline: none;
+    color: #ffffff;
+}
+.SignUp-container-5{
+    text-align: center;
+}
+.create-account-button{
+    background-color: #12182E;
+    font-family: "Arvo", sans-serif;
+    border: none;
+    width: auto;
+    color: #fcfd00;
+    padding: 0.5rem 2rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    margin: 2rem 0.5rem;
+    cursor: pointer;
+    border-radius: 32px;
+    /*box-shadow: 1px 0 2px 1px rgba(18, 24, 46, 0.69);*/
+}
+.create-account-button:hover{
+    background-color: #fcfd00;
+    color: #12182E;
+}

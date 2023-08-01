@@ -1,25 +1,44 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './Client_Details.css';
-import avatar from './Ellipse 1.png';
+import ClientList from "./ClientList";
+import {NewClientDet} from "../NewClientDet/NewClientDet";
 
+// var DummyClientDetail = [{
+//     clientName: "PS Srijan",
+//     clientGSTIN: "123456789",
+//     projectDone: 4,
+//     id: new Date().getTime().toString(),
+//     clientImage: "Images/Ellipse_1.png",
+// },]
+const DUMMY_CLIENTDETAIL = [
+    {
+        clientId: 'e1',
+        clientName: 'PS Srijan',
+        clientGSTIN: "123456789",
+        clientProjects: 8,
+        clientImage: "Images/Ellipse_1.png",
+    },{
+        clientId: 'e2',
+        clientName: 'ABC School',
+        clientGSTIN: "123456790",
+        clientProjects: 9,
+        clientImage: "Images/Ellipse_1.png",
+    },
+];
 const Client_Details = () => {
-    return (<div className="client-card-holder">
-            <div className="client-card">
-                <img src={avatar} alt={"avatar"}/>
-                <ul className="client-det">
-                    <li className="client-name">PS Srijan</li>
-                    <li className="client-projects">4 projects</li>
-                </ul>
-            </div>
-            <div className="client-card">
-                <img src={avatar} alt={"avatar"}/>
-                <ul className="client-det">
-                    <li className="client-name">PS Srijan</li>
-                    <li className="client-projects">4 projects</li>
-                </ul>
-            </div>
-        </div>
+    const [cleintDetail, setCleintDetail] = useState(DUMMY_CLIENTDETAIL);
 
+    const addExpenseHandler = (clientDet) => {
+        setCleintDetail((prevCleintDet) => {
+            return [clientDet, ...prevCleintDet];
+        });
+    };
+    return (<>
+            <NewClientDet onAddExpense={addExpenseHandler}/>
+            <div className="client-card-holder">
+                <ClientList items={cleintDetail}/>
+            </div>
+        </>
     )
 };
 

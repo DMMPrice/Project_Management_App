@@ -21,7 +21,9 @@ const NavBar = () => {
                     <Link to="/projectdet">
                         <li>Project Details</li>
                     </Link>
-                    <li><span className="log-out">Log out</span></li>
+                    <Link to="/">
+                        <li><span className="log-out">Log out</span></li>
+                    </Link>
                 </ul>
             </nav>
         </div>
